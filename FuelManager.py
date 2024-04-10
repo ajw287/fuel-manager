@@ -64,7 +64,7 @@ MED_TURQUOISE = ( 33,  84, 103)
 LIT_TURQUOISE = ( 93, 154, 173)
 GREEN         = (  0, 204,   0)
 LIT_RED       = (237,  96, 106)
-DARKTEXT      = (  0,   5,  20)
+DARKTEXT      = (100, 105, 150)
 
 BGCOLOR       = DARKTURQUOISE
 BTNCOLOR      = MED_TURQUOISE

@@ -1,6 +1,10 @@
 import pygame as pg
 
 class DropDown():
+
+    DARKTEXT      = (100, 105, 150)
+    #TODO: sort this out! - define colors once! not in each file
+
     """ A Simple DropDown menu code"""
     def __init__(self, color_menu, color_option, x, y, w, h, font, main, options, title):
         self.color_menu = color_menu
@@ -19,7 +23,7 @@ class DropDown():
         msg = self.font.render(self.main, 1, (255, 255, 255))
         surf.blit(msg, msg.get_rect(center = self.rect.center))
 
-        title = self.font.render(self.title, 1, (0, 5, 20))
+        title = self.font.render(self.title, 1, self.DARKTEXT)
         surf.blit(title, title.get_rect(bottomleft = self.rect.topleft))
         if self.draw_menu:
             for i, text in enumerate(self.options):
